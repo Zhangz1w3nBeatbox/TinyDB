@@ -14,6 +14,4 @@ public interface TranslationManager {
     //关闭事务管理器
     void close();
 
-
-
 }
