@@ -21,9 +21,9 @@ public interface TranslationManager {
     void abort(long xid);
 
     //检查某个事物的状态 通过xid事务id
-    Boolean isActive(long xid);
-    Boolean isCommitted(long xid);
-    Boolean isAborted(long xid);
+    boolean isActive(long xid);
+    boolean isCommitted(long xid);
+    boolean isAborted(long xid);
 
     //关闭事务管理器
     void close();

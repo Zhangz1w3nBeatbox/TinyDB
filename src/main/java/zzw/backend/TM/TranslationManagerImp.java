@@ -167,19 +167,19 @@ public class TranslationManagerImp implements TranslationManager {
     }
 
     @Override
-    public Boolean isActive(long xid) {
+    public boolean isActive(long xid) {
         if(xid==SUPER_XID) return  false;
         return checkXID(xid,FIELD_TRAN_ACTIVE);
     }
 
     @Override
-    public Boolean isCommitted(long xid) {
+    public boolean isCommitted(long xid) {
         if(xid==SUPER_XID) return  false;
         return checkXID(xid,FIELD_TRAN_COMMITTED);
     }
 
     @Override
-    public Boolean isAborted(long xid) {
+    public boolean isAborted(long xid) {
         if(xid==SUPER_XID) return  false;
         return checkXID(xid,FIELD_TRAN_ABORTED);
     }
