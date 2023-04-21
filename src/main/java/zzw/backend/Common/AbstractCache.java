@@ -115,6 +115,7 @@ public abstract class AbstractCache<T> {
 
     // 关闭缓存 写回所有资源
     protected void close(){
+
         lock.lock();
 
         try {
