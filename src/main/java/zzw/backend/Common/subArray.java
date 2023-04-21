@@ -10,4 +10,5 @@ public class subArray {
         this.start = start;
         this.end = end;
     }
+
 }
